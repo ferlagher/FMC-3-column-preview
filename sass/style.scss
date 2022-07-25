@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$color-orange: hsl(31, 77%, 52%);
+$color-cyan: hsl(184, 100%, 22%);
+$color-dark-cyan: hsl(179, 100%, 13%);
+$color-white: hsla(0, 0%, 100%, 0.75);
+$color-gray: hsl(0, 0%, 95%);
+
+$ft-fy-heading: 'Big Shoulders Display', cursive;
+$ft-fy-body: 'Lexend Deca', sans-serif;
+
+$ft-wt-bold: 700;
+$ft-wt-regular: 400;
+
+$ft-sz-lg: 2.5rem;
+$ft-sz-sm: calc(15rem / 16);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: $color-gray;
+    text-transform: uppercase;
+    margin: 0.7em 0 0.6em 0;
+    font: {
+        family: $ft-fy-heading;
+        weight: $ft-wt-bold;
+        size: $ft-sz-lg
+    }
+}
+
+p {
+    line-height: 1.75em;
+}
+
+svg {
+    width: 4rem;
+    height: 2.5rem;
+}
+
+button {
+    background-color: $color-gray;
+    color: #000;
+    mix-blend-mode: lighten;
+    border: solid 2px $color-gray;
+    width: min-content;
+    white-space: nowrap;
+    padding: 0.85em 2em;
+    border-radius: 3em;
+    cursor: pointer;
+    margin-top: 2em;
+    position: relative;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+    font: {
+        family: $ft-fy-body;
+        weight: $ft-wt-regular;
+        size: $ft-sz-sm;
+    }
+    &:hover {
+        background-color: transparent;
+        color: $color-gray;
+    }
+}
+
+body {
+    background: $color-gray;
+    min-height: 100vh;
+    color: $color-white;
+    display: grid;
+    grid-template-rows: auto min-content;
+    font: {
+        family: $ft-fy-body;
+        weight: $ft-wt-regular;
+        size: $ft-sz-sm;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        color: $color-dark-cyan;
+        text-align: center;
+        a {
+            color: $color-cyan;
+            text-decoration: none;
+            :visited {
+                color: $color-cyan;
+            }
+        }
+    }
+}
+
+.card {
+    width: clamp(min(100%, 327px), 64vw, 920px);
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 500px;
+    margin: min(6.4vw, 24px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    .column {
+        flex-basis: 30%;
+        flex-grow: 1;
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .orange {
+        background-color: $color-orange;
+    }
+    .cyan {
+        background-color: $color-cyan;
+    }
+    .dark-cyan {
+        background-color: $color-dark-cyan;
+    }
+}

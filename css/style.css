@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  margin: 0.7em 0 0.6em 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.75em;
+}
+
+svg {
+  width: 4rem;
+  height: 2.5rem;
+}
+
+button {
+  background-color: hsl(0deg, 0%, 95%);
+  color: #000;
+  mix-blend-mode: lighten;
+  border: solid 2px hsl(0deg, 0%, 95%);
+  width: min-content;
+  white-space: nowrap;
+  padding: 0.85em 2em;
+  border-radius: 3em;
+  cursor: pointer;
+  margin-top: 2em;
+  position: relative;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+}
+button:hover {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+
+body {
+  background: hsl(0deg, 0%, 95%);
+  min-height: 100vh;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  display: grid;
+  grid-template-rows: auto min-content;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer {
+  color: hsl(179deg, 100%, 13%);
+  text-align: center;
+}
+body footer a {
+  color: hsl(184deg, 100%, 22%);
+  text-decoration: none;
+}
+body footer a :visited {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.card {
+  width: clamp(min(100%, 327px), 64vw, 920px);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 500px;
+  margin: min(6.4vw, 24px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.card .column {
+  flex-basis: 30%;
+  flex-grow: 1;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .orange {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.card .cyan {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.card .dark-cyan {
+  background-color: hsl(179deg, 100%, 13%);
+}/*# sourceMappingURL=style.css.map */
