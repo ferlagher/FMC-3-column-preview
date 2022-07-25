@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-component-with-flexbox-and-custom-icon-system-shxLv0NOJG
 - Live Site URL: https://ferlagher.github.io/FMC-3-column-preview/
 
 ## My process
